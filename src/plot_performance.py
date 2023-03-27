@@ -11,6 +11,7 @@ from sklearn.metrics import (
 )
 import matplotlib.pyplot as plt
 from utils import get_data, split_data
+import scienceplots
 plt.style.use("science")
 
 
@@ -131,4 +132,4 @@ plt.text(1, 3.5, r"$R^2$ = " + str(round(r2_lr, 3)), fontsize=20)
 plt.title("LR", fontsize=20)
 plt.text(-0.15, 1.05, "(D)", transform=ax.transAxes, fontsize=20)
 
-plt.savefig("../imgs/linear.png")
+plt.savefig("linear.png")

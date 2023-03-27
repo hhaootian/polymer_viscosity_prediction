@@ -4,6 +4,7 @@
 from xgboost import XGBRegressor
 import matplotlib.pyplot as plt
 from utils import get_data, split_data
+import scienceplots
 plt.style.use("science")
 
 
@@ -37,4 +38,4 @@ plt.text(-0.08, imps[0] + 3, str(round(imps[0], 1)), fontsize=15)
 plt.text(1-0.1, imps[1] + 3, str(round(imps[1], 1)), fontsize=15)
 plt.text(2-0.08, imps[2] + 3, str(round(imps[2], 1)), fontsize=15)
 
-plt.savefig("../imgs/imp.png")
+plt.savefig("imp.png")
